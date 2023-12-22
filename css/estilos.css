@@ -390,7 +390,7 @@ input[type="search"]::-webkit-search-results-decoration {
     transition: .5s;
 }
 
-.botao-categoria.selecionado {
+.botao-categoria[aria-selected="true"] {
     background: var(--azul-destaque-light);
     color: var(--branco);
 }
@@ -405,7 +405,7 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--cinza-escuro);
 }
 
-:root.modo-escuro .botao-categoria.selecionado {
+:root.modo-escuro .botao-categoria[aria-selected="true"] {
     background-color: var(--azul-destaque-dark);
     color: var(--branco);
 }
