@@ -221,53 +221,55 @@
         <h2 class="visualmente-escondido">Seção de vídeos</h2>
 
         <div role="tablist" class="superior__secao__container">
-            <button role="tab" aria-selected="true" name="Tudo" class="botao-categoria selecionado">
+            <button id="botao-tudo" role="tab" aria-controls="painel-videos" aria-selected="true" name="Tudo" class="botao-categoria selecionado">
                 Tudo
             </button>
 
-            <button role="tab" aria-selected="false" name="Debates" class="botao-categoria">
+            <button id="botao-debates" role="tab" aria-controls="painel-videos" aria-selected="false" name="Debates" class="botao-categoria">
                 Debates
             </button>
 
-            <button role="tab" aria-selected="false" name="Ao Vivo" class="botao-categoria">
+            <button id="botao-ao-vivo" role="tab" aria-controls="painel-videos" aria-selected="false" name="Ao Vivo" class="botao-categoria">
                 Ao Vivo
             </button>
 
-            <button role="tab" aria-selected="false" name="Podcasts" class="botao-categoria">
+            <button id="botao-podcasts" role="tab" aria-controls="painel-videos" aria-selected="false" name="Podcasts" class="botao-categoria">
                 Podcasts
             </button>
 
-            <button role="tab" aria-selected="false" name="Front-end" class="botao-categoria">
+            <button id="botao-front-end" role="tab" aria-controls="painel-videos" aria-selected="false" name="Front-end" class="botao-categoria">
                 Front-end
             </button>
 
-            <button role="tab" aria-selected="false" name="Mobile" class="botao-categoria">
+            <button id="botao-mobile" role="tab" aria-controls="painel-videos" aria-selected="false" name="Mobile" class="botao-categoria">
                 Mobile
             </button>
 
-            <button role="tab" aria-selected="false" name="Data Science" class="botao-categoria">
+            <button id="botao-data-science" role="tab" aria-controls="painel-videos" aria-selected="false" name="Data Science" class="botao-categoria">
                 Data Science
             </button>
 
-            <button role="tab" aria-selected="false" name="Apps" class="botao-categoria">
+            <button id="botao-apps" role="tab" aria-controls="painel-videos" aria-selected="false" name="Apps" class="botao-categoria">
                 Apps
             </button>
 
-            <button role="tab" aria-selected="false" name="Programação" class="botao-categoria">
+            <button id="botao-programacao" role="tab" aria-controls="painel-videos" aria-selected="false" name="Programação" class="botao-categoria">
                 Programação
             </button>
 
-            <button role="tab" aria-selected="false" name="Inteligência Artificial" class="botao-categoria">
+            <button id="botao-inteligencia-artificial" role="tab" aria-controls="painel-videos" aria-selected="false" name="Inteligência Artificial" class="botao-categoria">
                 Inteligência Artificial
             </button>
-            <button role="tab" aria-selected="false" name="Inovação" class="botao-categoria">
+            <button id="botao-inovacao" role="tab" aria-controls="painel-videos" aria-selected="false" name="Inovação" class="botao-categoria">
                 Inovação
             </button>
         </div>
 
-        <ul class="videos__container">
+        <div id="painel-videos" role="tabpanel" aria-labelledby="botao-tudo">
+            <ul class="videos__container">
 
-        </ul>
+            </ul>
+        </div>
     </main>
 
     <script src="script.js" type="module"></script>

@@ -4,10 +4,18 @@ botoesCategorias.forEach((botao) => {
   botao.addEventListener("click", () => {
     const categoriaSelecionada = botao.getAttribute("name");
 
+    associarPainel(categoriaSelecionada);
     filtrarPorCategoria(categoriaSelecionada);
     atualizarEstadosDosBotoes(categoriaSelecionada);
   });
 });
+
+function associarPainel(categoriaSelecionada) {
+  const painelVideos = document.querySelector('[role="tabpanel"]');
+  const idBotao = document.querySelector(`[name="${categoriaSelecionada}"]`).id;
+
+  painelVideos.setAttribute("aria-labelledby", idBotao);
+}
 
 function filtrarPorCategoria(filtro) {
   const videos = document.querySelectorAll(".videos__item");
